@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/loganrose/projs/spsc-ring-buffer/build",
+  "command": "/usr/bin/c++  -I/Users/loganrose/projs/spsc-ring-buffer/include -std=gnu++2b -arch arm64 -o CMakeFiles/spsc_ring_buffer.dir/src/main.cpp.o -c /Users/loganrose/projs/spsc-ring-buffer/src/main.cpp",
+  "file": "/Users/loganrose/projs/spsc-ring-buffer/src/main.cpp",
+  "output": "CMakeFiles/spsc_ring_buffer.dir/src/main.cpp.o"
+}
+]
