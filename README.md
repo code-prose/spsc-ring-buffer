@@ -13,7 +13,7 @@
 - L2 Unified 4096 KiB (x10)
 Load Average: 1.95, 2.96, 3.74
 ------------------------------------------------------------------------------------------
-Benchmark                                                Time             CPU   Iterations
+#### Benchmark                                                Time             CPU   Iterations
 ------------------------------------------------------------------------------------------
 BM_Queue_Spec<Mutex::MutexQueue<int, 1024>>         843308 ns       673266 ns         1052
 BM_Queue_Spec<Lamport::LamportQueue<int, 1024>>     473487 ns       450476 ns         1474
@@ -34,7 +34,7 @@ std::memory_order_seq_cst uses `ldar` and `stlr` on ARM to avoid this.
 - L2 Unified 4096 KiB (x10)
 Load Average: 3.29, 3.91, 3.90
 ------------------------------------------------------------------------------------------
-Benchmark                                                Time             CPU   Iterations
+#### Benchmark                                                Time             CPU   Iterations
 ------------------------------------------------------------------------------------------
 BM_Queue_Spec<Mutex::MutexQueue<int, 1024>>         830879 ns       656196 ns         1070
 BM_Queue_Spec<Lamport::LamportQueue<int, 1024>>     480804 ns       456452 ns         1488
@@ -52,7 +52,7 @@ When using alignas(64) for `front_` and `back_` we can we another small bump in 
 - L2 Unified 4096 KiB (x10)
 Load Average: 3.54, 3.54, 3.73
 ------------------------------------------------------------------------------------------
-Benchmark                                                Time             CPU   Iterations
+#### Benchmark                                                Time             CPU   Iterations
 ------------------------------------------------------------------------------------------
 BM_Queue_Spec<Mutex::MutexQueue<int, 1024>>         843798 ns       666279 ns         1056
 BM_Queue_Spec<Lamport::LamportQueue<int, 1024>>     536653 ns       513953 ns         1000
