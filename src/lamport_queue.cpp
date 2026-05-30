@@ -7,7 +7,6 @@ namespace SPSC {
 
         back = std::atomic_load_explicit(back_, std::memory_order_seq_cst);
         front = std::atomic_load_explicit(front_, std::memory_order_seq_cst);
-        // check size? how does this work? Because back is a *? so we do ptr arithmetic mod N to get where the "start" should be? I'm confused
         if ((back + 1) % N == front) {
             return false;
         } else {
