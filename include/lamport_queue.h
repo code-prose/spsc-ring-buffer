@@ -36,7 +36,7 @@ namespace Lamport {
     template <typename T, std::size_t N>
     std::optional<T> LamportQueue<T, N>::pop() {
         std::size_t back, front;
-        front = std::atomic_load_explicit(&front_, std::memory_order_relaxed);
+        front = std::atomic_load_explicit(&front_, std::memory_order_seq_cst);
         back = std::atomic_load_explicit(&back_, std::memory_order_seq_cst);
         if (back == front) {
             return std::nullopt;
