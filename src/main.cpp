@@ -5,7 +5,7 @@
 #include <thread>
 
 
-const int ITERATIONS = 1000;
+const int ITERATIONS = 1024;
 
 void ringbuf_producer(SPSC::RingBuffer<int, ITERATIONS>& q);
 void ringbuf_consumer(SPSC::RingBuffer<int, ITERATIONS>& q);
